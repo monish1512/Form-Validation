@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form>
+        <div class="inpcon">
+            <label for="uid">UserId : </label>
+            <input type="text" placeholder="Enter the uid" onblur="valuid(this)">
+            <i class="fa-solid fa-check" style="display: none;"></i>
+            <i class="fa-solid fa-xmark" style="display: none;"></i>
+        </div>
+
+        <div class="inpcon">
+            <label for="name">Name : </label>
+            <input type="text" placeholder="Enter the name" onblur="valname(this)">
+            <i class="fa-solid fa-check" style="display: none;"></i>
+            <i class="fa-solid fa-xmark" style="display: none;"></i>
+        </div>
+
+        <div class="inpcon">
+            <label for="phno">Phno : </label>
+            <input type="text" placeholder="Enter the phno" onblur="valphno(this)">
+            <i class="fa-solid fa-check" style="display: none;"></i>
+            <i class="fa-solid fa-xmark" style="display: none;"></i>
+        </div>
+
+        <div class="inpcon">
+            <label for="email">Email : </label>
+            <input type="email" placeholder="Enter the email" onblur="valemail(this)">
+            <i class="fa-solid fa-check" style="display: none;"></i>
+            <i class="fa-solid fa-xmark" style="display: none;"></i>
+        </div>
+
+        <div class="pwdcon">
+            <label for="password">Password : </label>
+            <input type="password" placeholder="Enter the password" onkeyup="valpwd(this)">
+            <i class="fa-solid fa-check" style="display: none;"></i>
+            <i class="fa-solid fa-xmark" style="display: none;"></i>
+
+            <div class="pwddesc">
+                <p>Starts with upper case (A-Z)</p>
+                <p>It contain one lower case letter (a-z)</p>
+                <p>It contain one digit (0-9)</p>
+                <p>It contain one special symbol (#$^!%&*)</p>
+                <p>Length should be greater than 6</p>
+                <p>Spaces are not allowed</p>
+            </div>
+        </div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

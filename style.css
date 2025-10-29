@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f2f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+form {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0px 12px black;
+  width: 550px;
+}
+
+.inpcon,
+.pwdcon {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 75%;
+  padding: 10px 38px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+.pwdcon input {
+  width: 70%;
+  padding: 10px 38px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.pwdcon input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+i {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  font-size: 16px;
+  display: none;
+}
+
+.pwddesc {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #f9fafc;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+}
+
+.pwddesc p {
+  font-size: 13px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.fa-check {
+  color: #1cc88a;
+}
+
+.fa-xmark {
+  color: #e74a3b;
+}
